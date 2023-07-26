@@ -1,0 +1,73 @@
+nav{
+    /* background-color: transparent; */
+    position:sticky;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+
+
+/* plus-grow button animation */
+.button {
+    /* margin: .4em; */
+    padding: 1em;
+    cursor: pointer;
+    /* background: #ececec; */
+    text-decoration: none;
+    /* color: rgba(0,0,0,0.6); */
+  }
+
+@mixin hideTapHighlightColor() {
+	/* //Prevent highlight colour when element is tapped */
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+@mixin hardwareAccel() {
+	/* //Improve performance on mobile/tablet devices */
+	transform: translateZ(0);
+}
+
+@mixin improveAntiAlias() {
+	/* //Improve aliasing on mobile/tablet devices */
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+@keyframes pulse-grow {
+	to {
+		transform: scale(1.1);
+	}
+}
+
+.pulse-grow {
+	display: inline-block;
+
+	@include hideTapHighlightColor();
+	@include hardwareAccel();
+	@include improveAntiAlias();
+
+	&:hover {
+		animation-name: pulse-grow;
+		animation-duration: .3s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+}
+
+@media only screen and (max-width:600px){
+    nav{
+        margin:0;
+        padding:0
+    }
+    .linkDiv a{
+        font-size: 1rem;
+    }
+    .modeButton{
+        font-size:0.7rem;
+    }
+    .button{
+        padding: 0.5em;
+    }
+}

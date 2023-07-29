@@ -1,0 +1,92 @@
+
+
+.firstCard{
+    
+    padding:8px;
+    border:1px solid ;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(216, 216, 216);
+}
+
+
+.projectCard{
+    height: 1000px;
+    max-width: 60%;
+    max-height: 50%;
+    padding:8px;
+    border:1px solid ;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(216, 216, 216);
+}
+
+.project-title > a{
+    text-decoration: none;
+}
+
+.project-title{
+    display: inline-block;
+    position: relative;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
+
+.project-title::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(62, 101, 243);
+    transition: width 0.25s ease-out;
+}
+
+.project-title:hover::before{
+    width: 100%;
+    
+}
+
+
+
+@keyframes slash {
+    from{
+        opacity: 0.5;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+.githubicon {
+    font-size: 2rem;
+} 
+
+/* for small screens: */
+@media only screen and (max-width:600px){
+    .projects-container > 
+    .firstCard{
+     width: 80%;
+     height: 80%;
+     flex-direction: column !important;
+    }
+    .projects-container > .second-section{
+        flex-direction: column !important;
+    }
+    .projectCard{
+        width: 80%;
+        height: 80%;
+    }
+ }
+
+ /* for large screens: */
+ @media only screen and (min-width:1500px){
+    .projects-container > 
+    .firstCard{
+        width: 60vw;
+    }
+    .slidesDiv{
+        justify-self: center;
+    }
+ }

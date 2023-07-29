@@ -6,25 +6,25 @@ import DarkModeIcon from "@mui/icons-material/DarkMode";
 
 function Nav({ theme, handleThemeSwitch }) {
   return (
-    <nav className="w-screen text-white bg-black dark:bg-white dark:text-black flex justify-between items-center ">
+    <div className="navbar w-screen text-white bg-black dark:bg-white dark:text-black flex justify-between items-center ">
       <div className="linkDiv flex-2 ml-3">
-        <Link to="/" className="button pulse-grow  text-2xl ">
+        <Link to="/" className="linkButton pulse-grow  text-2xl ">
           Kaichong
         </Link>
-        <Link to="/projects" className="button pulse-grow  text-2xl ">
+        <Link to="/projects" className="linkButton pulse-grow  text-2xl ">
           Projects
         </Link>
-        <Link to="/resume" className="button pulse-grow  text-2xl ">
+        <Link to="/resume" className="linkButton pulse-grow  text-2xl ">
           Resume
         </Link>
       </div>
       <button
-        className="button pulse-grow bg-black-200 p-4 rounded-3xl mr-5  justify-self-end "
+        className="linkButton pulse-grow bg-black-200 p-4 rounded-3xl mr-5  justify-self-end "
         onClick={handleThemeSwitch}
       >
         {theme === "light" ? <DarkModeIcon /> : <LightModeIcon />}
       </button>
-    </nav>
+    </div>
   );
 }
 

@@ -15,10 +15,13 @@ function Footer() {
         All Rights Reserved
       </p>
       <div className=" w-10  flex flex-row gap-3">
-        <Link to="https://github.com/keven0311">
+        <Link className="text-white" to="https://github.com/keven0311">
           <GitHubIcon className="icons" />
         </Link>
-        <Link to="https://www.linkedin.com/in/kaichonglin/">
+        <Link
+          className="text-white"
+          to="https://www.linkedin.com/in/kaichonglin/"
+        >
           <LinkedInIcon className="icons" />
         </Link>
       </div>

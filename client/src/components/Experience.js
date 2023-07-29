@@ -59,7 +59,7 @@ function Experience() {
             <p>
               This is an international trading company who buying goods from the
               U.S. and exporting them to China. My job here is to arrange and
-              negotiation the products in my area, including releasing funds,
+              negotiation the products in Nebraska, including releasing funds,
               arrange shipments or transpotations, and negotiation deals.
             </p>
           </div>

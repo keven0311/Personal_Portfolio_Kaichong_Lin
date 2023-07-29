@@ -16,10 +16,10 @@ function Home() {
         animate={{ y: "0%" }}
         transition={{ duration: 0.75, ease: "easeOut" }}
         exit={{ opacity: 1 }}
-        className="page-container flex flex-col items-center gap-4 overflow-hidden dark:bg-black dark:text-white"
+        className="page-container flex flex-col justify-items-start gap-4 overflow-hidden dark:bg-black dark:text-white"
       >
         {/* first part div section: */}
-        <div className="page-section flex flex-row gap-3  items-center">
+        <div className="page-section flex flex-row gap-3 self-center items-center">
           {/* kev image section: */}
           <motion.div
             className=" max-w-md max-h-md flex-1 "
@@ -33,7 +33,7 @@ function Home() {
           {/* -----------------kev image section end------------------- */}
           {/* about me text section: */}
           <motion.div
-            className="aboutText flex-1 flex flex-col items-center gap-3 dark:text-white"
+            className="aboutText flex-1 flex flex-col max-w-2xl justify-start gap-3 dark:text-white"
             // animate={{ y: 0 }}
             // initial={{ y: "100%" }}
             // transition={{ delay: 0.5, duration: 0.5 }}

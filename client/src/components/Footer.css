@@ -5,3 +5,7 @@
 .icons:hover{
     font-size: 2.2rem;
 }
+
+.icons > a > svg{
+    color:white !important
+}

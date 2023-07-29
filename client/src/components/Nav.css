@@ -1,4 +1,4 @@
-nav{
+.navbar{
     /* background-color: transparent; */
     position:sticky;
     top:0;
@@ -7,11 +7,14 @@ nav{
     z-index: 1;
 }
 
+.linkDiv a{
+ color: white;
+}
 
 
 
 /* plus-grow button animation */
-.button {
+.linkButton {
     /* margin: .4em; */
     padding: 1em;
     cursor: pointer;

@@ -10,8 +10,8 @@
 
 
 .projectCard{
-    height: 1000px;
-    max-width: 60%;
+    height:auto;
+    max-width: 50%;
     max-height: 50%;
     padding:8px;
     border:1px solid ;
@@ -47,36 +47,39 @@
 }
 
 
+.githubicon {
+    font-size:3rem !important;
+} 
+.youtubeicon {
+    font-size: 3rem !important;
+} 
 
-@keyframes slash {
-    from{
-        opacity: 0.5;
-    }
-    to{
-        opacity: 1;
-    }
+.icons:hover{
+    transform: scale(1.2); 
+    transition: transform 0.3s ease-in-out; 
 }
 
 
 
-.githubicon {
-    font-size: 2rem;
-} 
 
 /* for small screens: */
 @media only screen and (max-width:600px){
     .projects-container > 
     .firstCard{
-     width: 80%;
-     height: 80%;
+     width: 100%;
+     height: 100%;
      flex-direction: column !important;
     }
     .projects-container > .second-section{
         flex-direction: column !important;
     }
+    .second-section{
+        
+    }
     .projectCard{
-        width: 80%;
-        height: 80%;
+        
+        max-width: 100%;
+        height: auto;
     }
  }
 

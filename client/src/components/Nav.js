@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Nav.css";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
+import Resume from "./Resume";
 
 function Nav({ theme, handleThemeSwitch }) {
   return (
@@ -15,7 +16,7 @@ function Nav({ theme, handleThemeSwitch }) {
           Projects
         </Link>
         <Link to="/resume" className="linkButton pulse-grow  text-2xl ">
-          Resume
+          <Resume />
         </Link>
       </div>
       <button

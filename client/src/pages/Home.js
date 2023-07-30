@@ -12,8 +12,8 @@ function Home() {
   return (
     <div ref={targetSection}>
       <motion.div
-        initial={{ y: "100%" }}
-        animate={{ y: "0%" }}
+        initial={{ x: "-100%" }}
+        animate={{ x: "0%" }}
         transition={{ duration: 0.75, ease: "easeOut" }}
         exit={{ opacity: 1 }}
         className="page-container flex flex-col justify-items-start gap-4 overflow-hidden dark:bg-black dark:text-white"

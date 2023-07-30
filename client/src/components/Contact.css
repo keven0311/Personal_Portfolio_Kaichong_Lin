@@ -1,0 +1,40 @@
+.contact-midline{
+    border: 1px solid rgb(152, 152, 152);
+}
+
+form{
+    width: 100%;
+    max-width: 560px;
+}
+
+label{
+    font-size: 1.8rem;
+}
+
+input , textarea{
+    width: 100%;
+    font-size: 2rem;
+    padding: 1.2rem;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    margin-top: 1rem;
+    background-color: rgb(75,85,99);
+    color: white;
+}
+
+textarea{
+    min-height: 250px;
+    resize: vertical;
+}
+
+@media only screen and (max-width:770px){
+    .contact-midline{
+        display: none;
+    }
+    .contact-main{
+        flex-direction: column;
+        margin-top: 3rem;
+        gap: 5rem;
+    }
+}

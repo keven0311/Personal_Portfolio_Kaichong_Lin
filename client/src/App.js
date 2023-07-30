@@ -6,6 +6,8 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import { AnimatePresence } from "framer-motion";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
+import Resume from "./components/Resume";
 
 function App() {
   const [theme, setTheme] = useState(null);
@@ -38,6 +40,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </AnimatePresence>
       </div>

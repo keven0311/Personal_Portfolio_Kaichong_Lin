@@ -21,6 +21,7 @@
 
 .project-title > a{
     text-decoration: none;
+    
 }
 
 .project-title{
@@ -28,6 +29,7 @@
     position: relative;
     padding-bottom: 2px;
     text-decoration: none;
+    margin-top: 10px;
 }
 
 .project-title::before{

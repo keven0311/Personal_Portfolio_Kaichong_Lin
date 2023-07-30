@@ -25,8 +25,10 @@ function Footer() {
           <LinkedInIcon className="icons" />
         </Link>
       </div>
-      <div className=" text-lg">
-        <Contact />
+      <div className=" text-lg ">
+        <Link className=" no-underline text-white" to="/contact">
+          Contact
+        </Link>
       </div>
     </div>
   );

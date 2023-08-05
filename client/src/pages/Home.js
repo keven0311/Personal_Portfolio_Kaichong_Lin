@@ -38,7 +38,7 @@ function Home() {
             // initial={{ y: "100%" }}
             // transition={{ delay: 0.5, duration: 0.5 }}
           >
-            <h1 className=" text-4xl">
+            <h1 className="about-title text-4xl">
               👋 Hello there, fellow creators! I'm Kaichong Lin, but you can
               call me Keven
             </h1>

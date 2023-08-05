@@ -1,7 +1,7 @@
 import React from "react";
 
 const RESUME_DOWNLOAD_URL =
-  "http://localhost:3000/files_for_download/KaichongLin_Resume.pdf";
+  "https://kaichonglin.com/files_for_download/KaichongLin_Resume.pdf";
 
 export default function Resume() {
   const downloadResume = (url) => {

@@ -13,6 +13,8 @@ import graphqllogo from "../images/graphqllogo.png";
 import pythonlogo from "../images/pythonlogo.png";
 import htmllogo from "../images/htmllogo.png";
 import csslogo from "../images/csslogo.avif";
+import javalogo from "../images/javalogo.jpg";
+import springbootlogo from "../images/springbootlogo.png";
 
 function Skills() {
   const skills = [
@@ -29,6 +31,8 @@ function Skills() {
     { name: "TailwindCSS", logo: tailwindcsslogo },
     { name: "GraphQL", logo: graphqllogo },
     { name: "Python", logo: pythonlogo },
+    { name: "Java", logo: javalogo},
+    { name: "SpringBoot", logo: springbootlogo}
   ];
 
   return (

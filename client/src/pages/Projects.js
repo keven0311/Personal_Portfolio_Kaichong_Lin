@@ -5,11 +5,12 @@ import { motion } from "framer-motion";
 import Slides from "../components/Slides";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import Button from "react-bootstrap/Button";
-import massproshopimage from "../images/mass-pro-shops-home.png";
-import kevtify from "../images/kevtify.png";
+import SingleProject from "../components/SingleProject";
+import projectsData from "../util/projectsData";
 
 function Projects() {
+
+
   return (
     <motion.div
       initial={{ y: "100%" }}
@@ -54,84 +55,10 @@ function Projects() {
       </div>
       {/* -------------first section end:----------------------------- */}
       {/* second section: */}
-      {/* left part project section: */}
-      <div className="second-section flex flex-row w-full items-center gap-5">
-        <div className="projectCard flex-1">
-          <div className="project-image">
-            <img alt="massproshop" src={massproshopimage} />
-          </div>
-          <div className="project-right flex-1 flex flex-col gap-2">
-            <h1 className="  font-bold">
-              <Link
-                to="https://two303-mass-pro-shops.onrender.com/home"
-                className="project-title text-zinc-500 "
-              >
-                Mass-Pro-Shops
-              </Link>
-            </h1>
-            <h5 className="  lg:text-xl text-base">
-              An extensive e-commerce website with user profiles, product
-              selection, cart, and Stripe API for checkout. Admins can manage
-              products and users.
-            </h5>
-            <div className="flex gap-3">
-              <Link to="https://github.com/mass-pro-shops/grace-shopper">
-                <GitHubIcon className="githubicon icons text-zinc-500" />
-              </Link>
-              <Button
-                variant="outline-secondary"
-                onClick={() =>
-                  (window.location.href =
-                    "https://two303-mass-pro-shops.onrender.com/home")
-                }
-              >
-                Visit
-              </Button>
-            </div>
-          </div>
-        </div>
-        {/*------------------- left side project section end -------------------------*/}
-        {/* right side project section */}
-        <div className="projectCard flex-1">
-          <div className="project-image">
-            <img alt="massproshop" src={kevtify} />
-          </div>
-          <div className="project-right flex-1 flex flex-col gap-2">
-            <h1 className="  font-bold">
-              <Link
-                to="https://spotify-clone-e384a.firebaseapp.com/"
-                className="project-title text-zinc-500 "
-              >
-                Kevtify
-              </Link>
-            </h1>
-            <h5 className="  lg:text-xl text-base">
-              Kevtify is an impressive Spotify-clone, meticulously crafted using
-              React, Tailwind CSS, and Material UI. Just like its inspiration,
-              Spotify, Kevtify offers a list of songs that you can play.
-              Leveraging the power of Firebase, the app seamlessly stores its
-              extensive collection of songs in Firebase Cloud Storage. Immerse
-              yourself in the world of music and enjoy the seamless experience
-              of Kevtify, your go-to Spotify-clone deployed effortlessly on
-              Firebase.
-            </h5>
-            <div className="flex gap-3">
-              <Link to="https://github.com/keven0311/Spotify-clone.Kaichong/tree/main/spotify-clone">
-                <GitHubIcon className="githubicon icons text-zinc-500" />
-              </Link>
-              <Button
-                variant="outline-secondary"
-                onClick={() =>
-                  (window.location.href =
-                    "https://spotify-clone-e384a.firebaseapp.com/")
-                }
-              >
-                Visit
-              </Button>
-            </div>
-          </div>
-        </div>
-        {/* -------- right side project section end ------------------------ */}
+      <div className="second-section flex flex-col w-full items-center gap-5">
+        {Object.keys(projectsData).map((key) => (
+          <SingleProject projectData={projectsData[key]}/>
+        ))}
       </div>
     </motion.div>
   );

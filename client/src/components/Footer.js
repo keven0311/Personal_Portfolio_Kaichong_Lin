@@ -10,7 +10,7 @@ function Footer() {
   return (
     <div className=" w-screen h-20 mt-auto bg-black text-white flex justify-evenly gap-5 p-4  dark:bg-white dark:text-black">
       <p className=" justify-self-start text-lg">
-        2023
+        2025
         <CopyrightIcon />
         All Rights Reserved
       </p>
